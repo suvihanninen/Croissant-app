@@ -74,7 +74,7 @@ public class CustomDialogAddCroissant extends Dialog implements
                     dismiss();
                     break;
                 case R.id.capture_croissant_picture_button:
-                   /** if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                   if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
                         if(ContextCompat.checkSelfPermission(this.c, Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED || ContextCompat.checkSelfPermission(this.c, Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_DENIED) {
                             //permission not enabled, request it
                             String [] permission = {Manifest.permission. CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
@@ -84,10 +84,10 @@ public class CustomDialogAddCroissant extends Dialog implements
                             Log.i(TAG, "onClick: Open camera porfa");
 
                         }
-                        else{**/
+                        else{
                             //permission already granted
                             openCamera();
-                            /**Log.i(TAG, "onClick: Open camera porfaaaaa");
+                            Log.i(TAG, "onClick: Open camera pleaseeeeee");
                         }
                     }
                     else{
@@ -96,7 +96,7 @@ public class CustomDialogAddCroissant extends Dialog implements
                 default:
                     break;
             }
-            dismiss();**/
+            dismiss();
         }
 
     private void openCamera(){
