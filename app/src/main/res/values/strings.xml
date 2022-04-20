@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CroissanApp</string>
+    <string-array name="store_name">
+        <item>store_name1</item>
+        <item>store_name2</item>
+        <item>store_name3</item>
+        <item>store_name4</item>
+        <item>store_name5</item>
+    </string-array>
+
+    <string-array name="review">
+        <item>"Review should be added"</item>
+        <item>"Review should be added"</item>
+        <item>"Review should be added"</item>
+        <item>"Review should be added"</item>
+        <item>"Review should be added"</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Strings used for intents -->
+    <string name="intent_croissant_title_text">croissant_title</string>
+    <string name="no_data_toast">No data</string>
+    <string name="store_name_intent_extra">store_name_intent_extra</string>
+    <string name="review_intent_extra">review_intent_extra</string>
+    <string name="images_intent_extra">images_intent_extra</string>
+    <string name="intent_croissant_review_text">intent_croissant_review_text</string>
+    <string name="intent_croissant_image">intent_croissant_image</string>
+
+
+</resources>

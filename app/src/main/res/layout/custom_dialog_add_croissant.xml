@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
+
+
+    <TextView
+        android:id="@+id/custom_dialog_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="20dp"
+        android:text="Add new croissant review:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/store_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:backgroundTint="#add827"
+        android:hint="Enter store name"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/custom_dialog_instructions"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/custom_dialog_instructions"
+        app:layout_constraintTop_toBottomOf="@+id/custom_dialog_instructions" />
+
+    <EditText
+        android:id="@+id/review_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:backgroundTint="#add827"
+        android:hint="Enter croissant review"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/store_name_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/store_name_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/store_name_edit_text" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#6638e2"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/add_new_croissant_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_new_croissant_button"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_croissant_button" />
+
+    <Button
+        android:id="@+id/add_new_croissant_button"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#6638e2"
+        android:text="Add new croissant"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/review_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/review_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/review_edit_text">
+
+        <Button
+            android:id="@+id/download_picture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="download picture"
+            app:layout_constraintEnd_toEndOf="@+id/capture_croissant_picture_button"
+            app:layout_constraintStart_toStartOf="@+id/capture_croissant_picture_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/capture_croissant_picture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            android:text="Take picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/croissant_picture_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/croissant_picture_image_view"
+            android:layout_width="131dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_camera"
+            tools:layout_conversion_absoluteHeight="111dp"
+            tools:layout_conversion_absoluteWidth="169dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
